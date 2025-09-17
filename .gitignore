@@ -52,4 +52,4 @@ Thumbs.db
 logs/
 
 gpt2_tokenizer/
-gpt2-NeMo/wsd_demo_logs/final_model/
+wsd_demo_logs/final_model/
