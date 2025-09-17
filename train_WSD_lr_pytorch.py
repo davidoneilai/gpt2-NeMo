@@ -29,7 +29,6 @@ class SimpleTextDataset(Dataset):
         end_idx = start_idx + self.seq_length + 1
         
         if end_idx > len(self.data):
-            # Pad com tokens especiais se necessário
             tokens = list(self.data[start_idx:])
             while len(tokens) < self.seq_length + 1:
                 tokens.append(self.tokenizer.eos_token_id)
